@@ -1,3 +1,25 @@
 body {
   background-color: #CFC5BD;
+  padding: 0;
+  margin:0;
+}
+
+.global-nav {
+  list-style-type: none;
+  float: right;
+}
+
+.global-nav li {
+  display: inline-block;
+}
+
+.global-logo {
+  width: 250px;
+  position: absolute;
+}
+
+.global-header {
+  background-color: #fff;
+  padding: 1em;
+  min-height: 28px;
 }
