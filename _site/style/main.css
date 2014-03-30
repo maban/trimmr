@@ -1,13 +1,21 @@
 body {
-  background-color: #CFC5BD;
+  background-color: #E3D9C9;
   padding: 0;
   margin:0;
+  font-family: helvetica;
+  font-size: 18px;
+}
+
+.global-header {
+  background-color: #fff;
+  padding: 1em 2em;
+  min-height: 28px;
   font-family: futura;
 }
 
 .global-nav {
   list-style-type: none;
-  float: right;
+  float: left;
   text-transform: uppercase;
 }
 
@@ -18,25 +26,65 @@ body {
 
 .global-nav ul {
   margin: 0;
+  padding: 0;
 }
 
 .global-nav li {
   display: inline-block;
-  margin: 0.2em 1em;
+  margin: 0.2em 1em 0.2em 0;
   padding: 0;
 }
 
-.global-logo {
-  width: 250px;
-  position: absolute;
+.nav-account {
+  float: right;
 }
 
-.global-header {
-  background-color: #fff;
-  padding: 1em;
-  min-height: 28px;
+.global-logo {
+  width: 225px;
+  position: absolute;
+  top: 1.25em;
+  left: 50%;
+  margin-left: -112.5px;
 }
+
+
 
 .global-footer {
   clear: both;
+  padding: 1em 2em;
+}
+
+main {
+  padding: 2em;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    display: block;
+    background-color: white;
+    position: relative;
+    border-radius: 4px;
+}
+
+.face {
+  background-image: url(/images/avatar/face-1.png);
+  background-repeat: no-repeat;
+  background-size: 70px;
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  left: 15px;
+  top: 10px;
+}
+
+.beard {
+  background-image: url(/images/avatar/beard-1.png);
+  background-repeat: no-repeat;
+  background-size: 70px;
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  left: 0;
+  top: 40px;
 }
