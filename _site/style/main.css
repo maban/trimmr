@@ -2,7 +2,7 @@ body {
   background-color: #fff;
   padding: 0;
   margin:0;
-  font-family: helvetica;
+  font-family: "Chaparral Pro", helvetica;
   font-size: 18px;
 }
 
@@ -11,10 +11,9 @@ img {
 }
 
 .global-header {
-  background-color: #A0C1D1;
+  background-color: #BBDAE5;
   padding: 1em 2em;
   min-height: 28px;
-  font-family: futura;
 }
 
 .global-header .avatar {
@@ -135,7 +134,7 @@ section {
   clear: both;
   display: block;
   position: relative;
-  background-color: #A0C1D1;
+  background-color: #BBDAE5;
 }
 
 .review {
@@ -158,4 +157,13 @@ section {
 
 .review .review-description {
   clear: both;
+}
+
+.button {
+  background-color: #BBDAE5;
+  padding: 8px 15px;
+  display: inline-block;
+  color: #000;
+  border-radius: 3px;
+  text-decoration: none;
 }
