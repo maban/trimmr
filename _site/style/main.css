@@ -1,9 +1,11 @@
 body {
-  background-color: #fff;
+  background-color: #F8F8F3;
   padding: 0;
   margin:0;
   font-family: "Chaparral Pro", helvetica;
-  font-size: 18px;
+  font-size: 20px;
+  line-height: 1.35em;
+  color: #333;
 }
 
 img {
@@ -157,13 +159,18 @@ section {
 
 .review .review-description {
   clear: both;
+  background-color: #F8F8F3;
+  padding: 0.1em 1em;
+  border-radius: 5px;
 }
 
 .button {
-  background-color: #BBDAE5;
-  padding: 8px 15px;
+  background-color: #E7B5AB;
+  padding: 10px 15px 7px;
   display: inline-block;
-  color: #000;
+  color: #333;
   border-radius: 3px;
   text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.85em;
 }
