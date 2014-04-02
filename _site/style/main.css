@@ -12,6 +12,11 @@ img {
   max-width: 100%;
 }
 
+h1,
+h2 {
+  margin-top: 0;
+}
+
 .global-header {
   background-color: #BBDAE5;
   padding: 1em 2em;
@@ -115,15 +120,29 @@ section {
   top: 40px;
 }
 
+.product {
+  width: 100%;
+}
+
 .product-image {
-  width: 30%;
+  width: 250px;
   float: left;
   margin-right: 2%;
+  position: absolute;
+  left: 2em;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.product-image img {
+  border: 3px solid #eee;
 }
 
 .product-description {
   width: 46%;
   float: left;
+  margin-left: 270px;
 }
 
 .product-popularity {
