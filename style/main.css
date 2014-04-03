@@ -212,6 +212,53 @@ section {
 .rating {
   background-image: url("/images/sprite-rating.png");
   width: 197px;
-  text-indent: -9999px
+  text-indent: -9999px;
+  background-position: 0 -294px;
+  background-repeat: no-repeat;
+}
 
+
+
+
+
+
+
+
+
+
+
+.rating-1 {
+  background-position: 0 -234px;
+}
+
+.rating-1-5 {
+  background-position: 0 -204px;
+}
+
+.rating-2 {
+  background-position: 0 -174px;
+}
+
+.rating-2-5 {
+  background-position: 0 -144px;
+}
+
+.rating-3 {
+  background-position: 0 -114px;
+}
+
+.rating-3-5 {
+  background-position: 0 -84px;
+}
+
+.rating-4 {
+  background-position: 0 -54px;
+}
+
+.rating-4-5 {
+  background-position: 0 24px;
+}
+
+.rating-5 {
+  background-position: 0 4px;
 }
