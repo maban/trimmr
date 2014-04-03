@@ -160,7 +160,6 @@ section {
 
 .review {
   position: relative;
-
 }
 
 .review .meta {
@@ -181,6 +180,22 @@ section {
   background-color: #F8F8F3;
   padding: 0.1em 1em;
   border-radius: 5px;
+  position: relative;
+}
+
+.review .review-description:after {
+  bottom: 100%;
+	left: 2.5em;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(255, 255, 255, 0);
+	border-bottom-color: #F8F8F3;
+	border-width: 20px;
+	margin-left: -20px;
 }
 
 .button {
@@ -192,4 +207,11 @@ section {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 0.85em;
+}
+
+.rating {
+  background-image: url("/images/sprite-rating.png");
+  width: 197px;
+  text-indent: -9999px
+
 }
