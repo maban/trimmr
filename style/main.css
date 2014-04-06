@@ -1,9 +1,47 @@
+@font-face {
+    font-family: 'Permian';
+    src: url('fonts/PermianSlabSerifTypeface-webfont.eot');
+    src: url('fonts/PermianSlabSerifTypeface-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/PermianSlabSerifTypeface-webfont.woff') format('woff'),
+         url('fonts/PermianSlabSerifTypeface-webfont.ttf') format('truetype'),
+         url('fonts/PermianSlabSerifTypeface-webfont.svg#permianslabseriftypefaceRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Permian Bold';
+    src: url('fonts/PermianSlabSerifTypeface-Bold-webfont.eot');
+    src: url('fonts/PermianSlabSerifTypeface-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/PermianSlabSerifTypeface-Bold-webfont.woff') format('woff'),
+         url('fonts/PermianSlabSerifTypeface-Bold-webfont.ttf') format('truetype'),
+         url('fonts/PermianSlabSerifTypeface-Bold-webfont.svg#permianslabseriftypefaceRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Permian Italic';
+    src: url('fonts/PermianSlabSerifTypeface-Italic-webfont.eot');
+    src: url('fonts/PermianSlabSerifTypeface-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/PermianSlabSerifTypeface-Italic-webfont.woff') format('woff'),
+         url('fonts/PermianSlabSerifTypeface-Italic-webfont.ttf') format('truetype'),
+         url('fonts/PermianSlabSerifTypeface-Italic-webfont.svg#permianslabseriftypefaceRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
 body {
   background-color: #F8F8F3;
   padding: 0;
   margin:0;
-  font-family: "Chaparral Pro", helvetica;
-  font-size: 20px;
+  font-family: Gotham, helvetica;
+  font-size: 17px;
   line-height: 1.35em;
   color: #333;
 }
@@ -12,15 +50,29 @@ img {
   max-width: 100%;
 }
 
+h1 {
+  font-size: 2em;
+  margin-top: 0;
+}
+
 h1,
-h2 {
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Permian", "Chaparral Pro", helvetica;
+}
+
+p {
   margin-top: 0;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 60em;
+  max-width: 70em;
   position: relative;
+  padding: 0 1.5em;
 }
 
 section {
@@ -29,10 +81,11 @@ section {
 
 .global-header {
   background-color: #BBDAE5;
-  padding: 1em 2em;
+  padding: 1.5em 0 1em;
   min-height: 28px;
-  border-bottom: 2px solid #C2C29D;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.14);
   margin-bottom: 2em;
+  font-family: "gotham";
 }
 
 .global-header .avatar {
@@ -62,6 +115,7 @@ section {
   list-style-type: none;
   float: left;
   text-transform: uppercase;
+  font-size: 1em;
 }
 
 .global-nav a {
@@ -92,7 +146,7 @@ section {
 .global-logo {
   width: 225px;
   position: absolute;
-  top: -0.1em;
+  top: -0.5em;
   left: 50%;
   margin-left: -112.5px;
 }
@@ -101,11 +155,11 @@ section {
 
 .global-footer {
   clear: both;
-  padding: 1em 2em;
+  padding: 0 2em;
 }
 
 section {
-  padding: 2em;
+  padding: 2em 0;
   float: left;
 }
 
@@ -149,20 +203,37 @@ section {
   float: left;
   margin-right: 2%;
   position: absolute;
-  left: 0;
+  left: 1.5em;
   display: block;
   margin: 0;
   padding: 0;
 }
 
 .product-image img {
-  border: 2px solid #C2C29D;
+  border: 2px solid rgba(0, 0, 0, 0.14);
 }
 
 .product-description {
-  width: 46%;
+  width: 54%;
   float: left;
   margin-left: 280px;
+}
+
+.product-description h2 {
+  margin-bottom: 0.4em;
+  font-size: 1.4em;
+  border-top: 1px solid #ddd;
+  padding-top: 0.8em;
+}
+
+.product-description .product-score {
+  color: #777;
+  font-size: 0.9em;
+  font-family: "Permian Italic";
+}
+
+.product-description .rating {
+  margin-right: 0.5em;
 }
 
 .product-popularity {
@@ -171,13 +242,17 @@ section {
   width: 20%;
 }
 
+.product-popularity h2 {
+  margin-top: 0;
+}
+
 .product-discussion {
   clear: both;
   display: block;
   position: relative;
   background-color: #BBDAE5;
-  border-top: 2px solid #C2C29D;
-  border-bottom: 2px solid #C2C29D;
+  border-top: 2px solid rgba(0, 0, 0, 0.14);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.14);
 }
 
 .review {
@@ -200,7 +275,7 @@ section {
 .review .review-description {
   clear: both;
   background-color: #F8F8F3;
-  padding: 0.1em 1em;
+  padding: 0.75em 1em 0.1em;
   border-radius: 5px;
   position: relative;
 }
@@ -238,6 +313,8 @@ section {
   background-position: 0 -294px;
   background-repeat: no-repeat;
   display: inline-block;
+  font-size: 1.5em;
+  height: 24px;
 }
 
 .rating-1 {
@@ -269,9 +346,27 @@ section {
 }
 
 .rating-4-5 {
-  background-position: 0 24px;
+  background-position: 0 -24px;
 }
 
 .rating-5 {
   background-position: 0 4px;
+}
+
+.review p {
+  clear: both;
+}
+
+.review .rating {
+  margin: 0 0 0.5em 0;
+  float: left;
+}
+
+.review .date {
+  float: right;
+  clear: none;
+  font-family: "Permian Italic";
+  color: #888;
+  font-size: 0.85em;
+  margin: 0;
 }
