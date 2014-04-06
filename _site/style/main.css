@@ -172,6 +172,8 @@ section {
 
 .product {
   width: 100%;
+  min-height: 330px;
+  float: left;
 }
 
 .product-image {
@@ -392,4 +394,18 @@ section {
     color: #777;
     clear: both;
     float: left;
+}
+
+.list-products {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list-products li {
+    display: block;
+    clear: both;
+}
+
+.list-products li .product-description {
+
 }
