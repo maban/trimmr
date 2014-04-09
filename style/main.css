@@ -89,26 +89,17 @@ section {
 }
 
 .global-header .avatar {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   top: -0.5em;
   right: 0;
   border-radius: 2px;
   margin-top: 0;
 }
 
-.global-header .face {
-  background-size: 30px;
-  left: 10px;
-  width: 30px;
-  height: 35px;
-}
-
-.global-header .beard {
-  background-size: 30px;
-  width: 30px;
-  top: 16px;
-  height: 15px;
+.global-header .avatar img {
+  width: 25px;
+  margin: 6px 8px;
 }
 
 .global-nav {
@@ -155,7 +146,8 @@ section {
 
 .global-footer {
   clear: both;
-  padding: 0 2em;
+  padding: 1em 0 0;
+  text-align: center;
 }
 
 section {
@@ -164,34 +156,18 @@ section {
 }
 
 .avatar {
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
     display: block;
     background-color: white;
     position: relative;
     border-radius: 4px;
 }
 
-.face {
-  background-image: url(/images/avatar/face-1.png);
-  background-repeat: no-repeat;
-  background-size: 70px;
-  height: 80px;
-  width: 70px;
-  position: absolute;
-  left: 15px;
-  top: 10px;
-}
-
-.beard {
-  background-image: url(/images/avatar/beard-1.png);
-  background-repeat: no-repeat;
-  background-size: 70px;
-  height: 40px;
-  width: 70px;
-  position: absolute;
-  left: 0;
-  top: 40px;
+.avatar img {
+  width: 50px;
+  margin: 10px 12px;
+  -webkit-transform: rotate(360deg);
 }
 
 .product {
@@ -244,6 +220,7 @@ section {
 
 .product-popularity h2 {
   margin-top: 0;
+  font-size: 1.2em;
 }
 
 .product-discussion {
@@ -257,6 +234,7 @@ section {
 
 .review {
   position: relative;
+  margin-bottom: 3em;
 }
 
 .review .meta {
@@ -369,4 +347,49 @@ section {
   color: #888;
   font-size: 0.85em;
   margin: 0;
+}
+
+.chart {
+    list-style-type: none;
+    padding: 0;
+}
+
+.chart li {
+    margin: 0 0 1em 0;
+    clear: both;
+    position: relative;
+    min-height: 55px;
+}
+
+.chart .avatar {
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1em;
+    border: 1px solid rgba(0, 0, 0, 0.14);
+    position: absolute;
+}
+
+.chart .avatar img {
+    width: 40px;
+    margin: 8px 10px;
+}
+
+.chart-line {
+    background-color: #E7B5AB;
+    margin-top: 6px;
+    height: 25px;
+    display: block;
+    float: left;
+    border-radius: 0 3px 3px 0;
+    margin-left: 62px;
+}
+
+.chart-line-label {
+    font-size: 0.85em;
+    font-family: "Permian Italic";
+    margin: 2px 0 0 65px;
+    color: #777;
+    clear: both;
+    float: left;
 }
