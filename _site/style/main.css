@@ -172,7 +172,6 @@ section {
 
 .product {
   width: 100%;
-  min-height: 330px;
   float: left;
 }
 
@@ -404,8 +403,15 @@ section {
 .list-products li {
     display: block;
     clear: both;
+    margin-bottom: 2em;
 }
 
-.list-products li .product-description {
-
+.list-products .product-score {
+    position: absolute;
+    bottom: 6px;
+    left: 2px;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+    padding: 2px 0 5px;
 }
