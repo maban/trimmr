@@ -105,17 +105,19 @@ section {
 
 .global-header {
   background-color: #BBDAE5;
-  padding: 1.5em 0 1em;
+  padding: 0;
   min-height: 28px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.14);
   margin-bottom: 2em;
   font-family: "Fira Sans";
+  float: left;
+  width: 100%;
 }
 
 .global-header .avatar {
   width: 40px;
   height: 40px;
-  top: -0.5em;
+  top: 1.3em;
   right: 0;
   border-radius: 2px;
   margin-top: 0;
@@ -133,9 +135,21 @@ section {
   font-size: 1em;
 }
 
+.global-nav li {
+    margin: 0;
+}
+
 .global-nav a {
   text-decoration: none;
   color: #000;
+  display: block;
+  padding: 2em 0.5em 1em;
+  margin: 0;
+}
+
+.global-nav li:hover a,
+.global-nav .state-active a {
+    background-color: rgba(255,255,255,0.4);
 }
 
 .global-nav ul {
@@ -145,7 +159,7 @@ section {
 
 .global-nav li {
   display: inline-block;
-  margin: 0.2em 1em 0.2em 0;
+  margin: 0;
   padding: 0;
 }
 
@@ -158,10 +172,15 @@ section {
   float: left;
 }
 
+.nav-account li a {
+    padding: 2.5em 0.8em 1.25em;
+    font-size: 0.8em;
+}
+
 .global-logo {
   width: 225px;
   position: absolute;
-  top: -0.5em;
+  top: 1.1em;
   left: 50%;
   margin-left: -112.5px;
 }
@@ -259,20 +278,27 @@ section {
 
 .review {
   position: relative;
-  margin-bottom: 3em;
+  margin: 2em 0;
+  clear: both;
+  overflow: hidden;
 }
 
 .review .meta {
   margin-left: 120px;
-  min-height: 100px;
 }
 
 .review .meta .rating {
   float: right;
 }
 
+.review .name {
+    margin: 0.5em 0.5em 0 0;
+    float: left;
+}
+
 .review .avatar {
   position: absolute;
+  margin-top: 0.7em;
 }
 
 .review .review-description {
@@ -281,21 +307,23 @@ section {
   padding: 0.75em 1em 0.1em;
   border-radius: 5px;
   position: relative;
+  margin-left: 100px;
+  float: left;
 }
 
 .review .review-description:after {
-  bottom: 100%;
-	left: 2.5em;
-	border: solid transparent;
-	content: " ";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-	border-color: rgba(255, 255, 255, 0);
-	border-bottom-color: #F8F8F3;
-	border-width: 20px;
-	margin-left: -20px;
+  top: 0.8em;
+  left: -24px;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(255, 255, 255, 0);
+  border-right-color: #F8F8F3;
+  border-width: 12px;
+  margin-right: 0;
 }
 
 .button {
@@ -307,6 +335,10 @@ section {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 0.85em;
+}
+
+.button-prominent {
+    background-color: #C2DBB9;
 }
 
 .rating {
@@ -362,16 +394,17 @@ section {
 
 .review .rating {
   margin: 0 0 0.5em 0;
-  float: left;
+  float: right;
+  clear: none;
+  -webkit-transform: rotate(360deg);
 }
 
 .review .date {
-  float: right;
+  float: left;
   clear: none;
-  font-family: "Permian Italic";
   color: #888;
   font-size: 0.85em;
-  margin: 0;
+  margin: 0.6em 0 0.5em 0;
 }
 
 .chart {
