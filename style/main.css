@@ -101,6 +101,8 @@ p {
 
 section {
   width: 100%;
+  padding: 2em 0;
+  float: left;
 }
 
 .global-header {
@@ -145,6 +147,10 @@ section {
   display: block;
   padding: 3.7em 0.5em 1em;
   margin: 0;
+  background-image: url("/images/sprite-nav.png");
+  background-size: 42%;
+  background-repeat: no-repeat;
+  background-position: 1.5em 0.5em;
 }
 
 .global-nav li:hover a,
@@ -193,11 +199,6 @@ section {
   clear: both;
   padding: 1em 0 0;
   text-align: center;
-}
-
-section {
-  padding: 2em 0;
-  float: left;
 }
 
 .avatar {
@@ -305,7 +306,7 @@ section.product {
 .review .review-description {
   clear: both;
   background-color: #F8F8F3;
-  padding: 0.75em 1em 0.1em;
+  padding: 1.1em 1em 0.1em;
   border-radius: 5px;
   position: relative;
   margin-left: 100px;
@@ -491,6 +492,8 @@ section.product {
     display: block;
     clear: both;
     margin-bottom: 2em;
+    float: left;
+    width: 100%;
 }
 
 .list-products .product-description {
@@ -503,9 +506,31 @@ section.product {
     width: 250px;
     float: left;
     margin-right: 2%;
-    position: absolute;
-    left: 1.5em;
     display: block;
     margin: 0;
     padding: 0;
+}
+
+.segment {
+    width: 30%;
+    background-color: #D1D1D1;
+    float: left;
+    padding: 1.666%;
+    margin-bottom: 2em;
+    background-image: url("/images/shaving-brush.png");
+    background-position: center 90%;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    text-align: center;
+    background-size: 50%;
+}
+
+.segment:nth-of-type(3) {
+    background-image: url("/images/scissors.png");
+    background-size: 45%;
+}
+
+.segment:nth-of-type(2) {
+    background-image: url("/images/razor.png");
+    background-size: 60%;
 }
