@@ -104,14 +104,14 @@ section {
 }
 
 .global-header {
-  background-color: #BBDAE5;
+  background-color: rgba(82, 111, 117, 0.73);
   padding: 0;
   min-height: 28px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.14);
-  margin-bottom: 2em;
+  /*border-bottom: 2px solid rgba(0, 0, 0, 0.14);*/
   font-family: "Fira Sans";
   float: left;
   width: 100%;
+  margin-bottom: 3em;
 }
 
 .global-header .avatar {
@@ -141,15 +141,16 @@ section {
 
 .global-nav a {
   text-decoration: none;
-  color: #000;
+  color: #FFF;
   display: block;
-  padding: 2em 0.5em 1em;
+  padding: 3.7em 0.5em 1em;
   margin: 0;
 }
 
 .global-nav li:hover a,
 .global-nav .state-active a {
-    background-color: rgba(255,255,255,0.4);
+    background-color: #F8F8F3;
+    color: #333;
 }
 
 .global-nav ul {
@@ -178,11 +179,12 @@ section {
 }
 
 .global-logo {
-  width: 225px;
+  width: 223px;
   position: absolute;
-  top: 1.1em;
+  top: 2.6em;
   left: 50%;
   margin-left: -112.5px;
+  padding: 0 0.5em 0.5em 0.5em;
 }
 
 
@@ -213,7 +215,7 @@ section {
   -webkit-transform: rotate(360deg);
 }
 
-.product {
+section.product {
   width: 100%;
   float: left;
 }
@@ -271,9 +273,8 @@ section {
   clear: both;
   display: block;
   position: relative;
-  background-color: #BBDAE5;
-  border-top: 2px solid rgba(0, 0, 0, 0.14);
-  border-bottom: 2px solid rgba(0, 0, 0, 0.14);
+  background-color: rgba(117, 82, 82, 0.73);
+  color: #fff;
 }
 
 .review {
@@ -309,6 +310,7 @@ section {
   position: relative;
   margin-left: 100px;
   float: left;
+  color: #5C5C5C;
 }
 
 .review .review-description:after {
@@ -327,18 +329,30 @@ section {
 }
 
 .button {
-  background-color: #E7B5AB;
+  background-color: rgba(117, 82, 82, 0.73);
   padding: 10px 15px 7px;
   display: inline-block;
-  color: #333;
+  color: #F8F8F3;
   border-radius: 3px;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 0.85em;
 }
 
+.button:hover,
+.button:focus,
+.button:active {
+    background-color: rgba(117, 82, 82, 0.53);
+}
+
 .button-prominent {
-    background-color: #C2DBB9;
+    background-color: rgba(82, 111, 117, 0.73);
+}
+
+.button-prominent:hover,
+.button-prominent:focus,
+.button-prominent:active {
+    background-color: rgba(82, 111, 117, 0.53);
 }
 
 .rating {
@@ -402,7 +416,7 @@ section {
 .review .date {
   float: left;
   clear: none;
-  color: #888;
+  color: rgba(248, 248, 243, 0.73);
   font-size: 0.85em;
   margin: 0.6em 0 0.5em 0;
 }
@@ -434,7 +448,7 @@ section {
 }
 
 .chart-line {
-    background-color: #E7B5AB;
+    background-color: rgba(117, 82, 82, 0.73);
     margin-top: 6px;
     height: 25px;
     display: block;
@@ -465,10 +479,33 @@ section {
 
 .list-products .product-score {
     position: absolute;
-    bottom: 6px;
+    bottom: 9px;
     left: 2px;
     width: 100%;
     background-color: rgba(0,0,0,0.5);
     text-align: center;
     padding: 2px 0 5px;
+}
+
+.list-products .product {
+    display: block;
+    clear: both;
+    margin-bottom: 2em;
+}
+
+.list-products .product-description {
+    width: 77%;
+    float: right;
+    margin-bottom: 3em;
+}
+
+.list-products .product-image {
+    width: 250px;
+    float: left;
+    margin-right: 2%;
+    position: absolute;
+    left: 1.5em;
+    display: block;
+    margin: 0;
+    padding: 0;
 }
