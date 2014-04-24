@@ -145,16 +145,18 @@ section {
   text-decoration: none;
   color: #FFF;
   display: block;
-  padding: 3.7em 0.5em 1em;
+  padding: 4em 0.5em 0.75em;
   margin: 0;
   background-image: url("/images/sprite-nav.png");
   background-size: 42%;
   background-repeat: no-repeat;
   background-position: 1.5em 0.5em;
+  min-width: 6em;
+  text-align: center;
 }
 
-.global-nav li:hover a,
-.global-nav .state-active a {
+.nav-sections li:hover a,
+.nav-sections .state-active a {
     background-color: #F8F8F3;
     color: #333;
 }
@@ -170,6 +172,39 @@ section {
   padding: 0;
 }
 
+.nav-sections li:nth-child(1) a {
+  background-image: url("/images/shaving-brush-invert.png");
+  background-size: 2em;
+  background-position: center 1em;
+}
+
+.nav-sections li:nth-child(1):hover a,
+.nav-sections .state-active:nth-child(1) a {
+  background-image: url("/images/shaving-brush.png");
+}
+
+.nav-sections li:nth-child(3) a {
+  background-image: url("/images/razor-invert.png");
+  background-size: 2.4em;
+  background-position: center 1em;
+}
+
+.nav-sections li:nth-child(3):hover a,
+.nav-sections .state-active:nth-child(3) a {
+  background-image: url("/images/razor.png");
+}
+
+.nav-sections li:nth-child(2) a {
+  background-image: url("/images/scissors-invert.png");
+  background-size: 2.7em;
+  background-position: center 1em;
+}
+
+.nav-sections li:nth-child(2):hover a,
+.nav-sections .state-active:nth-child(2) a {
+  background-image: url("/images/scissors.png");
+}
+
 .nav-account {
   float: right;
   margin-right: 0;
@@ -182,6 +217,7 @@ section {
 .nav-account li a {
     padding: 2.5em 0.8em 1.25em;
     font-size: 0.8em;
+    background-image: none;
 }
 
 .global-logo {
@@ -211,8 +247,8 @@ section {
 }
 
 .avatar img {
-  width: 50px;
-  margin: 10px 12px;
+    width: 61px;
+    margin: 7px;
   -webkit-transform: rotate(360deg);
 }
 
@@ -444,8 +480,8 @@ section.product {
 }
 
 .chart .avatar img {
-    width: 40px;
-    margin: 8px 10px;
+    width: 50px;
+    margin: 6px 5px;
 }
 
 .chart-line {
@@ -517,20 +553,23 @@ section.product {
     float: left;
     padding: 1.666%;
     margin-bottom: 2em;
-    background-image: url("/images/shaving-brush.png");
     background-position: center 90%;
     background-repeat: no-repeat;
     min-height: 400px;
     text-align: center;
+}
+
+.segment.section-grooming {
+    background-image: url("/images/shaving-brush.png");
     background-size: 50%;
 }
 
-.segment:nth-of-type(3) {
+.segment.section-trims {
     background-image: url("/images/scissors.png");
-    background-size: 45%;
+    background-size: 60%;
 }
 
-.segment:nth-of-type(2) {
+.segment.section-styles  {
     background-image: url("/images/razor.png");
     background-size: 60%;
 }
