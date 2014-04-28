@@ -547,6 +547,60 @@ section.product {
     padding: 0;
 }
 
+.list-products-mini .product {
+    float: left;
+    width: 23%;
+    clear: none;
+    position: relative;
+    margin-right: 2.5%;
+}
+
+.list-products-mini .product:nth-child(4n+4) {
+    margin-right: 0;
+}
+
+.list-products-mini .product:nth-child(4n+5) {
+    clear: both;
+}
+
+.list-products-mini .product-image {
+    top: 0;
+    left: 0;
+    height: 200px;
+    overflow: hidden;
+    border: 2px solid rgba(0, 0, 0, 0.14);
+    width: 100%;
+    display: table-cell;
+    border-radius: 2%;
+    background-color: #fff;
+}
+
+.list-products-mini .product-score {
+    left: 0;
+    bottom: 0;
+}
+
+.list-products-mini img {
+    border: none;
+    
+}
+
+.list-products-mini .product-description {
+    position: relative;
+    margin-top: 215px;
+    margin-left: 0;
+    width: 100%;
+    float: none;
+}
+
+.list-products-mini h2 {
+    border: none;
+    padding-top: 0;
+    line-height: 1.2em;
+    font-size: 1.2em;
+    text-align: center;
+}
+
 .segment {
     position: relative;
       width: 31.6666%;
@@ -560,7 +614,6 @@ section.product {
       text-indent: .1em;
       margin: 0 2.5% 2em 0;
     z-index: 1;
-    overflow: hidden;
     border-radius: 2%;
     
 }
@@ -569,7 +622,7 @@ section.product {
     position: absolute;
     left: -2px;
     top: 0;
-    right: -2px;
+    right: 2px;
     bottom: 0;
     color: #F8F8F3;
 }
@@ -582,10 +635,29 @@ section.product {
     margin-right: 0;
 }
 
+.segment:after {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(136, 183, 213, 0);
+	border-top-color: rgba(82, 111, 117, 0.29);
+	border-width: 30px;
+	margin-left: -30px;
+}
+
 .segment.section-grooming {
     background-image: url("/images/shaving-brush.png");
     background-size: 160px;
 }
+
+    section.section-grooming {
+        background-color: rgba(82, 111, 117, 0.29);
+    }
 
 .segment.section-trims {
     background-image: url("/images/scissors.png");
@@ -593,11 +665,29 @@ section.product {
     background-color: rgba(117, 82, 88, 0.29);
 }
 
+section.section-trims {
+    background-color: rgba(117, 82, 88, 0.29);
+}
+
+.segment.section-trims:after {
+    border-top-color: rgba(117, 82, 88, 0.29);
+    }
+
 .segment.section-styles  {
     background-image: url("/images/razor.png");
     background-size: 190px;
     background-color: rgba(82, 117, 82, 0.29);
-}
+    }
+    
+    section.section-styles {
+        background-color: rgba(82, 117, 82, 0.29);
+    }
+
+.segment.section-styles:after {
+    border-top-color: rgba(82, 117, 82, 0.29);
+    }
+
+
 
 .segment svg path {
     fill: rgba(73, 74, 73, 0.8);
