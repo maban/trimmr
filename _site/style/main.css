@@ -105,11 +105,15 @@ section {
   float: left;
 }
 
+section h1 {
+    margin: 0.5em 0 1.5em 0;
+    text-align: center;
+}
+
 .global-header {
   background-color: rgba(82, 111, 117, 0.73);
   padding: 0;
-  min-height: 28px;
-  /*border-bottom: 2px solid rgba(0, 0, 0, 0.14);*/
+  min-height: 80px;
   font-family: "Fira Sans";
   float: left;
   width: 100%;
@@ -151,7 +155,6 @@ section {
   background-size: 42%;
   background-repeat: no-repeat;
   background-position: 1.5em 0.5em;
-  min-width: 6em;
   text-align: center;
 }
 
@@ -207,7 +210,7 @@ section {
 
 .nav-account {
   float: right;
-  margin-top: 0.5em;
+  margin-top: 0;
 }
 
 .nav-account li {
@@ -223,7 +226,7 @@ section {
 .global-logo {
   width: 223px;
   position: absolute;
-  top: 2.6em;
+  top: 22px;
   left: 50%;
   margin-left: -112.5px;
   padding: 0 0.5em 0.5em 0.5em;
@@ -392,6 +395,12 @@ section.product {
     background-color: rgba(82, 111, 117, 0.53);
 }
 
+.button-section {
+    clear: both;
+    margin: 0 auto 3em;
+    display: table;
+}
+
 .rating {
   background-image: url("/images/sprite-rating.png");
   width: 197px;
@@ -508,6 +517,12 @@ section.product {
     padding: 0;
 }
 
+.list-products:after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
 .list-products li {
     display: block;
     clear: both;
@@ -568,7 +583,7 @@ section.product {
     left: 0;
     height: 200px;
     overflow: hidden;
-    border: 2px solid rgba(0, 0, 0, 0.14);
+    border: 2px solid rgba(0, 0, 0, 0.3);
     width: 100%;
     display: table-cell;
     border-radius: 2%;
@@ -591,6 +606,7 @@ section.product {
     margin-left: 0;
     width: 100%;
     float: none;
+    margin-bottom: 1em;
 }
 
 .list-products-mini h2 {
@@ -606,13 +622,12 @@ section.product {
       width: 31.6666%;
       float: left;
       height: 410px;
-      margin: 20px 0;
       background: rgba(82, 111, 117, 0.29);
     background-repeat: no-repeat;
     background-position: center 90%;
     text-align: center;
       text-indent: .1em;
-      margin: 0 2.5% 2em 0;
+      margin: 0 2.5% 1.75em 0;
     z-index: 1;
     border-radius: 2%;
     
@@ -644,8 +659,8 @@ section.product {
 	width: 0;
 	position: absolute;
 	pointer-events: none;
-	border-color: rgba(136, 183, 213, 0);
-	border-top-color: rgba(82, 111, 117, 0.29);
+	border-color: transparent;
+	border-top-color: transparent;
 	border-width: 30px;
 	margin-left: -30px;
 }
@@ -654,6 +669,10 @@ section.product {
     background-image: url("/images/shaving-brush.png");
     background-size: 160px;
 }
+    
+    .page-grooming .segment.section-grooming:after {
+        border-top-color: rgba(82, 111, 117, 0.29);
+    }
 
     section.section-grooming {
         background-color: rgba(82, 111, 117, 0.29);
@@ -669,7 +688,7 @@ section.section-trims {
     background-color: rgba(117, 82, 88, 0.29);
 }
 
-.segment.section-trims:after {
+.page-trims .segment.section-trims:after {
     border-top-color: rgba(117, 82, 88, 0.29);
     }
 
@@ -683,7 +702,7 @@ section.section-trims {
         background-color: rgba(82, 117, 82, 0.29);
     }
 
-.segment.section-styles:after {
+.page-styles .segment.section-styles:after {
     border-top-color: rgba(82, 117, 82, 0.29);
     }
 
@@ -712,4 +731,10 @@ section.section-trims {
     font-family: 'Permian Italic';
     margin: 1em 0 2em;
     clear: both;
+    
+}
+
+section {
+    
+    
 }
