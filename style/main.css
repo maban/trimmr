@@ -397,7 +397,7 @@ section.product {
 
 .button-section {
     clear: both;
-    margin: 0 auto 3em;
+    margin: 0 auto 1em;
     display: table;
 }
 
@@ -530,11 +530,9 @@ section.product {
 }
 
 .list-products .product-score {
-    position: absolute;
     bottom: 9px;
     left: 2px;
     width: 100%;
-    background-color: rgba(0,0,0,0.5);
     text-align: center;
     padding: 2px 0 5px;
 }
@@ -570,6 +568,11 @@ section.product {
     margin-right: 2.5%;
 }
 
+.list-products-mini a {
+    color: #333;
+    text-decoration: none;
+}
+
 .list-products-mini .product:nth-child(4n+4) {
     margin-right: 0;
 }
@@ -593,6 +596,7 @@ section.product {
 .list-products-mini .product-score {
     left: 0;
     bottom: 0;
+    text-align: left;
 }
 
 .list-products-mini img {
@@ -615,23 +619,39 @@ section.product {
     line-height: 1.2em;
     font-size: 1.2em;
     text-align: center;
+    margin-bottom: 0;
+}
+
+
+
+.section-mini,
+.segment {
+    width: 30%;
+    margin: 0 0 1.75em 2.5%;
 }
 
 .segment {
     position: relative;
-      width: 31.6666%;
+      height: 180px;
       float: left;
-      height: 410px;
       background: rgba(82, 111, 117, 0.29);
     background-repeat: no-repeat;
     background-position: center 90%;
     text-align: center;
       text-indent: .1em;
-      margin: 0 2.5% 1.75em 0;
+  margin-bottom: 0;
     z-index: 1;
     border-radius: 2%;
-    
+    background-image: url("/images/header.png");
+    background-position: top center;
+    background-size: 100% 138px;
+    border-radius: 10px;
 }
+
+.home .segment {
+    background-size: 100% 165px;
+    height: 410px;
+    }
 
 .segment a {
     position: absolute;
@@ -640,70 +660,58 @@ section.product {
     right: 2px;
     bottom: 0;
     color: #F8F8F3;
+    background-repeat: no-repeat;
+    background-position: center 90%;
 }
 
 .segment:nth-child(1) {
-    margin-left: 0;
 }
 
 .segment:nth-child(3) {
     margin-right: 0;
 }
 
-.segment:after {
-	top: 100%;
-	left: 50%;
-	border: solid transparent;
-	content: " ";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-	border-color: transparent;
-	border-top-color: transparent;
-	border-width: 30px;
-	margin-left: -30px;
-}
-
-.segment.section-grooming {
+.home .segment.section-grooming a {
     background-image: url("/images/shaving-brush.png");
     background-size: 160px;
 }
+
+
     
-    .page-grooming .segment.section-grooming:after {
-        border-top-color: rgba(82, 111, 117, 0.29);
-    }
 
     section.section-grooming {
         background-color: rgba(82, 111, 117, 0.29);
     }
 
-.segment.section-trims {
+.home .segment.section-trims a {
     background-image: url("/images/scissors.png");
     background-size: 200px;
+    }
+.segment.section-trims {
     background-color: rgba(117, 82, 88, 0.29);
 }
 
 section.section-trims {
     background-color: rgba(117, 82, 88, 0.29);
 }
-
-.page-trims .segment.section-trims:after {
-    border-top-color: rgba(117, 82, 88, 0.29);
-    }
-
-.segment.section-styles  {
+.home .segment.section-styles a  {
     background-image: url("/images/razor.png");
     background-size: 190px;
+    }
+.segment.section-styles  {
     background-color: rgba(82, 117, 82, 0.29);
     }
     
     section.section-styles {
         background-color: rgba(82, 117, 82, 0.29);
     }
-
-.page-styles .segment.section-styles:after {
-    border-top-color: rgba(82, 117, 82, 0.29);
+    
+    .page-grooming .segment.section-grooming,
+    .page-trims .segment.section-trims,
+    .page-styles .segment.section-styles {
+        border-radius: 10px 10px 0 0;
+        margin-bottom: 0;
+        padding-bottom: 1.5em;
     }
 
 
@@ -734,7 +742,75 @@ section.section-trims {
     
 }
 
-section {
+.section-mini {
+    border-radius: 0 0 10px 10px;
+    padding-top: 0;
+}
+
+.section-mini h1 {
+    font-size: 1.4em;
+}
+
+.section-mini .product {
+    width: 100%;
+    clear: both;
+    margin: 0;
+    min-height: 200px;
     
-    
+}
+
+.section-mini .product-image {
+    width: 150px;
+    height: 150px;
+    float: left;
+    border-radius: 55% 0 55% 55%;
+    border: none;
+    box-shadow: 0 0 1px rgba(0,0,0,0.2);
+}
+
+.section-mini .product-description {
+    float: left;
+    width: 55%;
+    clear: none;
+    margin-top: 0;
+    margin-left: 170px;
+
+}
+
+.section-mini .product h2 {
+    text-align: left;
+    margin-top: 0;
+}
+
+.proceed {
+    font-size: 1.2em;
+    vertical-align: bottom;
+    padding-top: 2px;
+    display: inline-block;
+}
+
+.section-mini .avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 55% 0 55% 55%;
+}
+
+.section-mini .avatar img {
+    width: 114px;
+    position: absolute;
+    left: 0;
+    margin: 18px;
+}
+
+.list-styles-mini .description {
+    margin-left: 170px;
+}
+
+.increase {
+    color: #6e8665;
+}
+
+.home .segment {
+    margin-bottom: 0;
+    border-radius: 10px 10px 0 0;
 }
